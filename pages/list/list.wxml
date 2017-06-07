@@ -1,0 +1,26 @@
+<view class="list_title">
+	<text>{{title}}</text>
+</view>
+<block wx:for="{{ list }}">
+	<view class="list_item">
+		<image src="{{item.images.small}}" mode="scaleToFill"></image>
+		<view class="list_content">
+			<view class="list_name">
+				<text class="list_name_tit">{{item.title}}</text>
+				<text class="year">{{item.year}}</text>
+			</view>
+			<text class="list_bt">导演：</text>
+			<block wx:for="{{ item.directors }}">
+				<text class="list_bt_con">{{item.name}} </text>
+			</block>
+			<text class="list_bt">\n主演：</text>
+			<block wx:for="{{ item.casts }}">
+				<text class="list_bt_con">{{item.name}} </text>
+			</block>
+			<text class="list_bt">\n影片类型：</text>
+			<text class="list_bt_con">{{item.genres}}</text>
+			<text class="list_bt">\n评分：</text>
+			<text class="list_bt_con">{{item.rating.average}}</text>
+		</view>
+	</view>
+</block>

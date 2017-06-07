@@ -1,0 +1,51 @@
+.list_title text {
+	display: block;
+	width: 100%;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #ececec;
+}
+
+.list_item {
+	display: flex;
+	width: 92%;
+	padding: 10rpx 4% 30rpx;
+	border: 1px solid #ececec;
+}
+
+.list_item image {
+	width: 20%;
+	height: 200rpx;
+	padding: 10rpx;
+	border: 1px solid #ececec;
+}
+
+.list_content {
+	flex: 1;
+	padding-left: 20rpx;
+}
+
+.list_name {
+	display: flex;
+}
+
+.list_name_tit {
+	font-size: 40rpx;
+	font-weight: bold;
+	color: #333;
+}
+
+.year {
+	flex: 1;
+	text-align: right;
+}
+
+.list_bt {
+	font-size: 30rpx;
+	color: #999;
+}
+
+.list_bt_con {
+	font-size: 30rpx;
+	color: #666;
+}
